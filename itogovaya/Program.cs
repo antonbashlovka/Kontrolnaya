@@ -66,7 +66,3 @@ printArray(arr);
 printArray(makeResultArray(arr));
     
 
-
-
-//Console.WriteLine("Сумма произведений пар чисел: " + sum);
-
