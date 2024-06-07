@@ -39,11 +39,17 @@ public class App {
 
         Scanner in = new Scanner(System.in);
 
-        String[] arrInfo = new String[3];
+        String[][] arrInfo = new String[3][3];
 
         for (int i = 0; i <= 2; i++ ){
             System.out.print("Input toy's id weight name: ");
-            arrInfo[i] = in.nextLine();
+            arrInfo[i] = in.nextLine().split(" ");
+        }
+
+        in.close();
+
+        for (int i = 0; i <= 2; i++ ){
+            System.out.print("id: " + arrInfo[i][0] + " weight: " + arrInfo[i][1] + " name: " + arrInfo[i][2] + "\n");
         }
 
 
